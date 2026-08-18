@@ -1,8 +1,38 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    preset: 'netlify',
+  },
+  runtimeConfig: {
+    // Private - only available server-side
+    backendUrl: process.env.BACKEND_URL || 'https://elo--elo-backend--fwg2j6rrxrkh.code.run',
+  },
+  compatibilityDate: '2026-01-01',
+  future: {
+    compatibilityVersion: 4,
+  },
   modules: [
     '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
   ],
-  devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
+  devtools: { enabled: false },
+  app: {
+    head: {
+      htmlAttrs: { class: 'dark' },
+      meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' }],
+    },
+  },
+  css: ['~/assets/css/main.css'],
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        'pinia',
+        'lucide-vue-next',
+        'sweetalert2'
+      ]
+    }
+  }
 })
