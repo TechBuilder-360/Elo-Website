@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   modules: [
-    '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
   ],
