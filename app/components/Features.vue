@@ -1,50 +1,37 @@
 <template>
-  <section id="features" class="w-full py-20 md:py-32 bg-secondary/30">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-        <h2 class="text-3xl md:text-5xl font-bold tracking-tighter text-foreground">
-          Everything you need to scale
+  <section id="features" class="w-full py-24 md:py-32 relative overflow-hidden">
+    <!-- Subtle background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold tracking-wide mb-5">
+          Everything You Need
+        </div>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground mb-4">
+          Built for modern businesses
         </h2>
-        <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Our platform provides a complete suite of tools to manage your finances, streamline operations, and drive growth.
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          ELO provides every financial tool a growing business needs — in a single, beautifully designed platform.
         </p>
       </div>
-      
-      <div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <!-- Feature 1 -->
-        <div class="group flex flex-col items-start space-y-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50 relative overflow-hidden">
-          <div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
-          <div class="p-2 bg-primary/10 rounded-lg text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div v-for="(feature, i) in features" :key="i"
+          class="group relative flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 overflow-hidden">
+          <!-- Background glow on hover -->
+          <div class="absolute -right-6 -top-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+          <!-- Icon -->
+          <div class="mb-5 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary/20 transition-colors">
+            <component :is="feature.icon" class="w-5 h-5" />
           </div>
-          <h3 class="text-xl font-semibold text-card-foreground">Global Wallet</h3>
-          <p class="text-muted-foreground leading-relaxed">
-            Manage fiat and crypto assets in one unified platform. Send, receive, and swap instantly across borders.
-          </p>
-        </div>
-        
-        <!-- Feature 2 -->
-        <div class="group flex flex-col items-start space-y-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50 relative overflow-hidden">
-          <div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
-          <div class="p-2 bg-primary/10 rounded-lg text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-card-foreground">Automated Compliance</h3>
-          <p class="text-muted-foreground leading-relaxed">
-            Stay compliant effortlessly with automated KYC/KYB checks, transaction monitoring, and integrated reporting.
-          </p>
-        </div>
-        
-        <!-- Feature 3 -->
-        <div class="group flex flex-col items-start space-y-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/50 relative overflow-hidden">
-          <div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
-          <div class="p-2 bg-primary/10 rounded-lg text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-card-foreground">Real-time Analytics</h3>
-          <p class="text-muted-foreground leading-relaxed">
-            Make data-driven decisions with real-time insights, custom dashboards, and comprehensive financial reports.
-          </p>
+
+          <!-- Content -->
+          <h3 class="text-base font-semibold text-foreground mb-2">{{ feature.title }}</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed">{{ feature.description }}</p>
         </div>
       </div>
     </div>
@@ -52,4 +39,55 @@
 </template>
 
 <script setup>
+import {
+  Wallet, ShieldCheck, BarChart3, Globe, Building2, Zap, FileText, Users, Lock
+} from 'lucide-vue-next'
+
+const features = [
+  {
+    icon: Wallet,
+    title: 'Multi-Currency Wallet',
+    description: 'Manage fiat and crypto assets in a single unified wallet. Send, receive, and swap across borders in real-time with competitive rates.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Automated Compliance (KYB)',
+    description: 'Stay fully compliant without the paperwork. Our automated KYB/KYC process verifies your business identity and documents in minutes.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Real-Time Analytics',
+    description: 'Track business performance, customer growth, and revenue trends with beautiful, interactive dashboards updated in real-time.',
+  },
+  {
+    icon: Globe,
+    title: 'Global Payments',
+    description: 'Accept and send payments across 100+ countries. Support for local payment methods, international wire transfers, and crypto payouts.',
+  },
+  {
+    icon: Building2,
+    title: 'Multi-Business Management',
+    description: 'Manage multiple business entities under a single account. Switch between businesses, track finances, and control access with ease.',
+  },
+  {
+    icon: Zap,
+    title: 'Instant Settlements',
+    description: 'Say goodbye to 3-5 day bank delays. ELO settles your transactions instantly, so your cash flow stays healthy and predictable.',
+  },
+  {
+    icon: FileText,
+    title: 'Document Management',
+    description: 'Upload, store, and manage compliance documents securely. Track document status, expiry dates, and approval workflows all in one place.',
+  },
+  {
+    icon: Users,
+    title: 'Team Access Control',
+    description: 'Invite team members and assign custom roles. Control who can view, approve, or initiate financial transactions.',
+  },
+  {
+    icon: Lock,
+    title: 'Enterprise-Grade Security',
+    description: 'Protected by end-to-end encryption, two-factor authentication, and advanced fraud monitoring to keep your business safe.',
+  },
+]
 </script>

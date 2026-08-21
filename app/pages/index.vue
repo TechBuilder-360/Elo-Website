@@ -1,20 +1,27 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="min-h-screen bg-background text-foreground">
     <Navbar />
-    <main class="flex-1">
+    <main>
       <Hero />
+      <Stats />
       <Features />
+      <HowItWorks />
+      <Pricing />
+      <CTA />
     </main>
     <Footer />
   </div>
 </template>
 
 <script setup>
-// SEO Best Practices
 useHead({
-  title: 'Elo - The Future of Business Finance',
+  title: 'ELO Business — Business Finance, Finally Simplified',
   meta: [
-    { name: 'description', content: 'Streamline your financial operations, manage assets securely, and scale your business with Elo.' }
-  ]
+    { name: 'description', content: 'ELO Business is your all-in-one financial operating system. Manage multi-currency wallets, automate compliance, track analytics, and scale globally.' },
+    { property: 'og:title', content: 'ELO Business — Business Finance, Finally Simplified' },
+    { property: 'og:description', content: 'Manage multi-currency wallets, automate compliance, and scale globally with ELO Business.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'robots', content: 'index, follow' },
+  ],
 })
 </script>
