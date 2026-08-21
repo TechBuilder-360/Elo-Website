@@ -6,7 +6,6 @@
       <Stats />
       <Features />
       <HowItWorks />
-      <Pricing />
       <CTA />
     </main>
     <Footer />
