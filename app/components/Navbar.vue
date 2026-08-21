@@ -19,11 +19,11 @@
 
       <!-- Desktop CTA -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="https://elo-business-web.netlify.app/" target="_blank"
+        <a href="https://eloweb.netlify.app/" target="_blank"
           class="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-3 py-2 rounded-md hover:bg-accent">
           Sign In
         </a>
-        <a href="https://elo-business-web.netlify.app/signup" target="_blank"
+        <a href="https://eloweb.netlify.app/signup" target="_blank"
           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-all shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5">
           Get Started Free
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -44,8 +44,8 @@
         <a href="/#how-it-works" class="mobile-nav-link" @click="mobileOpen = false">How It Works</a>
         <NuxtLink to="/about" class="mobile-nav-link" @click="mobileOpen = false">About</NuxtLink>
         <div class="flex flex-col gap-2 pt-3 mt-2 border-t border-border">
-          <a href="https://elo-business-web.netlify.app/" target="_blank" class="w-full text-center py-2.5 rounded-lg border border-border text-sm font-medium hover:bg-accent transition-colors">Sign In</a>
-          <a href="https://elo-business-web.netlify.app/signup" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors">Get Started Free</a>
+          <a href="https://eloweb.netlify.app/" target="_blank" class="w-full text-center py-2.5 rounded-lg border border-border text-sm font-medium hover:bg-accent transition-colors">Sign In</a>
+          <a href="https://eloweb.netlify.app/signup" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors">Get Started Free</a>
         </div>
       </div>
     </div>

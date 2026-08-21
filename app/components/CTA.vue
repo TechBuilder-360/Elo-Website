@@ -14,7 +14,7 @@
             Join over 2,000 businesses already using ELO to manage their finances, stay compliant, and scale globally. Get started in minutes — completely free.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://elo-business-web.netlify.app/signup" target="_blank"
+            <a href="https://eloweb.netlify.app/signup" target="_blank"
               class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-base hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 hover:-translate-y-1">
               Start for Free — No Credit Card
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

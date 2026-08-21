@@ -75,7 +75,7 @@ const plans = [
     period: null,
     featured: false,
     cta: 'Get Started',
-    href: 'https://elo-business-web.netlify.app/signup',
+    href: 'https://eloweb.netlify.app/signup',
     features: [
       '1 business entity',
       'Fiat wallet (USD, EUR, GBP)',
@@ -92,7 +92,7 @@ const plans = [
     period: 'month',
     featured: true,
     cta: 'Start Free Trial',
-    href: 'https://elo-business-web.netlify.app/signup',
+    href: 'https://eloweb.netlify.app/signup',
     features: [
       'Up to 5 business entities',
       'Fiat + Crypto wallets',

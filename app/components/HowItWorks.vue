@@ -29,7 +29,7 @@
       </div>
 
       <div class="text-center mt-14">
-        <a href="https://elo-business-web.netlify.app/signup" target="_blank"
+        <a href="https://eloweb.netlify.app/signup" target="_blank"
           class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-xl shadow-primary/25 hover:-translate-y-0.5">
           Create Free Account
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

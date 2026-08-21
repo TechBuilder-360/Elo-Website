@@ -38,7 +38,7 @@
 
           <!-- CTAs -->
           <div class="flex flex-col sm:flex-row gap-4 mb-12">
-            <a href="https://elo-business-web.netlify.app/signup" target="_blank"
+            <a href="https://eloweb.netlify.app/signup" target="_blank"
               class="group inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 hover:shadow-primary/40 hover:-translate-y-1">
               Start for Free
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

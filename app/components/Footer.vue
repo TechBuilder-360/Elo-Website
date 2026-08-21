@@ -66,7 +66,7 @@ const columns = [
       { label: 'Features', href: '/#features' },
       { label: 'Pricing', href: '/#pricing' },
       { label: 'How It Works', href: '/#how-it-works' },
-      { label: 'Sign In', href: 'https://elo-business-web.netlify.app/', external: true },
+      { label: 'Sign In', href: 'https://eloweb.netlify.app/', external: true },
     ],
   },
   {
