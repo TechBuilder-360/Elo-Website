@@ -14,7 +14,6 @@
       <div class="hidden md:flex items-center gap-1">
         <a href="/#features" class="nav-link">Features</a>
         <a href="/#how-it-works" class="nav-link">How It Works</a>
-        <a href="/#pricing" class="nav-link">Pricing</a>
         <NuxtLink to="/about" class="nav-link">About</NuxtLink>
       </div>
 
@@ -43,7 +42,6 @@
       <div class="container mx-auto px-4 py-4 flex flex-col gap-1">
         <a href="/#features" class="mobile-nav-link" @click="mobileOpen = false">Features</a>
         <a href="/#how-it-works" class="mobile-nav-link" @click="mobileOpen = false">How It Works</a>
-        <a href="/#pricing" class="mobile-nav-link" @click="mobileOpen = false">Pricing</a>
         <NuxtLink to="/about" class="mobile-nav-link" @click="mobileOpen = false">About</NuxtLink>
         <div class="flex flex-col gap-2 pt-3 mt-2 border-t border-border">
           <a href="https://elo-business-web.netlify.app/" target="_blank" class="w-full text-center py-2.5 rounded-lg border border-border text-sm font-medium hover:bg-accent transition-colors">Sign In</a>
