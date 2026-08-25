@@ -41,8 +41,8 @@
 
               <div id="introduction">
                 <h2 class="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
-                <p class="mb-3">Welcome to ELO Business ("ELO", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform and services.</p>
-                <p>By accessing or using ELO Business, you agree to this Privacy Policy and our Terms of Service. If you do not agree, please discontinue use of our services immediately.</p>
+                <p class="mb-3">Welcome to ELO ("we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform and services.</p>
+                <p>By accessing or using ELO, you agree to this Privacy Policy and our Terms of Service. If you do not agree, please discontinue use of our services immediately.</p>
               </div>
 
               <div id="information-we-collect">
@@ -145,7 +145,7 @@
                 <h2 class="text-2xl font-bold text-foreground mb-4">9. Contact Us</h2>
                 <p class="mb-4">If you have any questions about this Privacy Policy or Terms of Service, please contact us:</p>
                 <div class="p-6 rounded-2xl border border-border bg-card space-y-2">
-                  <p><strong class="text-foreground">ELO Business Ltd.</strong></p>
+                  <p><strong class="text-foreground">ELO Ltd.</strong></p>
                   <p>Email: <a href="mailto:privacy@elobusiness.com" class="text-primary hover:underline">privacy@elobusiness.com</a></p>
                   <p>Support: <a href="mailto:support@elobusiness.com" class="text-primary hover:underline">support@elobusiness.com</a></p>
                   <p class="text-xs text-muted-foreground/70 pt-2">We aim to respond to all inquiries within 2 business days.</p>
@@ -164,9 +164,9 @@
 
 <script setup>
 useHead({
-  title: 'Privacy Policy & Terms of Service — ELO Business',
+  title: 'Privacy Policy & Terms of Service — ELO',
   meta: [
-    { name: 'description', content: 'Read the ELO Business Privacy Policy and Terms of Service. Understand how we collect, use, and protect your data.' },
+    { name: 'description', content: 'Read the ELO Privacy Policy and Terms of Service. Understand how we collect, use, and protect your data.' },
     { name: 'robots', content: 'index, follow' },
   ],
 })

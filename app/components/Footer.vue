@@ -8,7 +8,7 @@
             <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center overflow-hidden shadow-md shadow-primary/20">
               <img src="/favicon_io/favicon_io/apple-touch-icon.png" alt="ELO" class="w-full h-full object-cover" />
             </div>
-            <span class="text-lg font-bold tracking-tight text-foreground">ELO Business</span>
+            <span class="text-lg font-bold tracking-tight text-foreground">ELO</span>
           </div>
           <p class="text-sm text-muted-foreground leading-relaxed max-w-xs">
             The next-generation financial infrastructure for ambitious businesses. Built for the modern global economy.
@@ -44,7 +44,7 @@
 
       <!-- Bottom -->
       <div class="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-        <p>© {{ new Date().getFullYear() }} ELO Business. All rights reserved.</p>
+        <p>© {{ new Date().getFullYear() }} ELO. All rights reserved.</p>
         <div class="flex items-center gap-4">
           <span class="flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
@@ -64,7 +64,6 @@ const columns = [
     title: 'Product',
     links: [
       { label: 'Features', href: '/#features' },
-      { label: 'Pricing', href: '/#pricing' },
       { label: 'How It Works', href: '/#how-it-works' },
       { label: 'Sign In', href: 'https://eloweb.netlify.app/', external: true },
     ],

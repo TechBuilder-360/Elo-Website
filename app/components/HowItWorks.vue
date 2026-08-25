@@ -9,7 +9,7 @@
           Up and running in minutes
         </h2>
         <p class="text-lg text-muted-foreground">
-          Getting started with ELO Business is fast, simple, and completely free.
+          Getting started with ELO is fast, simple, and completely free.
         </p>
       </div>
 

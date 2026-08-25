@@ -7,7 +7,7 @@
         <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center overflow-hidden shadow-lg shadow-primary/30">
           <img src="/favicon_io/favicon_io/apple-touch-icon.png" alt="ELO" class="w-full h-full object-cover" />
         </div>
-        <span class="text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">ELO Business</span>
+        <span class="text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">ELO</span>
       </NuxtLink>
 
       <!-- Desktop Nav -->

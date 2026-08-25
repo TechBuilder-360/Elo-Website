@@ -33,7 +33,7 @@
 
           <!-- Subheadline -->
           <p class="text-lg text-muted-foreground leading-relaxed mb-10">
-            ELO Business is your all-in-one financial operating system. Manage multi-currency wallets, automate compliance, and scale your business globally — from a single, powerful dashboard.
+            ELO is your all-in-one financial operating system. Manage multi-currency wallets, automate compliance, and scale your business globally — from a single, powerful dashboard.
           </p>
 
           <!-- CTAs -->
